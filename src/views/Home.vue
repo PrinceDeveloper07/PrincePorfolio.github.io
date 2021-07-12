@@ -1,31 +1,17 @@
 <template>
-<div>
-  <Banner/>
-  <AboutSection />
-  <Skills />
-  <TheProjects />
-  <Footer />
-</div>
+  <v-container class="Home">
+    <TheHome />
+  </v-container>
 </template>
 
 <script>
-import Banner from '../components/Banner'
-import AboutSection from '../components/AboutSection'
-import Skills from '../components/Skills'
-import Footer from '../components/Footer'
-import TheProjects from '../components/TheProjects'
+import TheHome from "../components/TheHome";
+
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    Banner,
-    AboutSection,
-    Skills,
-    Footer,
-    TheProjects
-  }
-}
+    TheHome,
+  },
+};
 </script>
-<style lang="scss" scoped>
-
-</style>

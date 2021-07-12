@@ -1,32 +1,27 @@
 <template>
-  <v-app>
-      <Navigation />
-      <router-view></router-view>
+  <v-app class="app">
+    <TheNavigationDrawer />
     <v-main>
-      
+      <router-view></router-view>
     </v-main>
+
+    <v-footer padless>
+      <TheNavBottom />
+    </v-footer>
   </v-app>
 </template>
 
 <script>
-import Navigation from './components/Navigation'
-
+import TheNavigationDrawer from "./components/TheNavigationDrawer.vue";
+import TheNavBottom from "./components/TheNavBottom.vue";
 
 export default {
-  name: 'App',
-
+  name: "App",
   components: {
-    Navigation,
-  
+    TheNavigationDrawer,
+    TheNavBottom,
   },
-
-  data: () => ({
-    //
-  }),
 };
 </script>
 
-<style lang="scss" scoped>
-
-
-</style>
+<style lang="scss" scoped></style>
